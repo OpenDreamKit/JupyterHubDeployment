@@ -79,10 +79,12 @@ This is a quick hack to achieve it if you have run `sage -notebook=ipython`:
     
     logo-64x64.png:  a symbolic link to /usr/local/sage/local/share/sage/ext/notebook-ipython/logo-64x64.png
 
-    Change "/usr/local/sage" to the correct path.
-
     logo.svg a symbolic link to /usr/local/sage/local/share/sage/ext/notebook-ipython/logo.svg
+    
+    Change "/usr/local/sage" to the correct path.
 
     kernel.json:  an example:
 
-    {"display_name": "Sage 6.8.beta2", "argv": ["/usr/local/sage/sage", "-python", "-m", "sage.repl.ipython_kernel", "-f", "{connection_file}"]}moi@kepler:/usr/local
+    {"display_name": "Sage 6.8.beta2", "argv": ["/usr/local/sage/sage",
+    "-python", "-m", "sage.repl.ipython_kernel", "-f",
+    "{connection_file}"]}moi@kepler:/usr/local
