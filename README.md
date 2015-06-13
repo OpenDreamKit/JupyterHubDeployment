@@ -43,11 +43,16 @@ around with JupyterHub and Sage.
 
 - Follow the instructions on https://github.com/jupyter/dockerspawner:
 
-
-      git clone git@github.com:jupyter/dockerspawner.git
+      git clone git@github.com:jupyter/dockerspawner.git	
+  
       cd dockerspawner
       sudo pip3 install -r requirements.txt
       sudo python3 setup.py install
+
+      --> does not work for me (td) on Ubuntu 14.04 LTS:
+      cd dockerspawner
+      python3 setup.py install
+      <---- seems ok.
 
 - Get the docker image (virtual size: 2.9 Go!)
 
