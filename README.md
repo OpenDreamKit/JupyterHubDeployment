@@ -88,3 +88,6 @@ This is a quick hack to achieve it if you have run `sage -notebook=ipython`:
     {"display_name": "Sage 6.8.beta2", "argv": ["/usr/local/sage/sage",
     "-python", "-m", "sage.repl.ipython_kernel", "-f",
     "{connection_file}"]}moi@kepler:/usr/local
+
+    Documentation for "kernels" in Ipython3 is at:
+    https://ipython.org/ipython-doc/dev/development/kernels.html
