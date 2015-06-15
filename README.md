@@ -78,6 +78,9 @@ This is a quick hack to achieve it if you have run `sage -notebook=ipython`:
 
     cp -r ~/.sage/ipython-3.1.0/kernels/* /usr/local/share/jupyter/kernels/
 
+    ## This does not work in a multiuser environment: j-hub seems to see only
+    ## ~/.sage/ipython-3.1.0/kernels/
+
     Actually, kernels/* are:
 
     doc: a symbolic link to  /usr/local/sage/src/doc/output/html/en
