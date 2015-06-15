@@ -56,13 +56,19 @@ around with JupyterHub and Sage.
 
 - Get the docker image (virtual size: 2.9 Go!)
 
-      docker pull jupyter/singleuser
+      sudo docker pull jupyter/singleuser
 
 - Create a JupyterHub configuration file:
 
       jupyterhub --generate-config
 
 - Edit jupyterhub_config.py and add:
+
+      c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
+
+- Variant for systemuser:
+
+      sudo docker pull jupyter/systemuser
 
       c.JupyterHub.spawner_class = 'dockerspawner.DockerSpawner'
 
